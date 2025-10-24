@@ -14,6 +14,11 @@ import lombok.Setter;
 public class Truck extends Vehicle {
 	
 	private Integer towingWeightLimit;
+	
+	public Truck(String make, String model, String licensePlate, Integer mileage, Integer manufactureYear, Integer towingWeightLimit) {
+		super(1L, make, model, licensePlate, mileage, manufactureYear);
+		this.towingWeightLimit = towingWeightLimit;
+	}
 
 	@Override
 	public void drive() {
